@@ -52,6 +52,12 @@ class NameRegistViewController: UIViewController {
             print("error save seller name")
         }
         
+        
+        
+    }
+    
+    func testingGitHUb(){
+        print("sehllo")
     }
 
 }
