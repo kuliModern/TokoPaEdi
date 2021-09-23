@@ -49,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0B571F926FCD8090056F1A2 /* SellerProduct */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */,
+				C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */,
+			);
+			path = SellerProduct;
+			sourceTree = "<group>";
+		};
 		C0DB7E3D26FA3CC900C955D5 = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +80,8 @@
 				C0DB7E6426FA3F0400C955D5 /* SellerDatabase */,
 				C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */,
 				C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */,
-				C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */,
+				C0B571F926FCD8090056F1A2 /* SellerProduct */,
 				C0DB7E6D26FCBF1F00C955D5 /* Registration */,
-				C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */,
 				C0DB7E5526FA3CCB00C955D5 /* Assets.xcassets */,
 				C0DB7E5726FA3CCB00C955D5 /* LaunchScreen.storyboard */,
 				C0DB7E5A26FA3CCB00C955D5 /* Info.plist */,

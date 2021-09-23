@@ -47,6 +47,13 @@ class NameRegistViewController: UIViewController {
         do {
             try context.save()
             
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "sellerProductVC") as! ViewController
+            
+            self.navigationController?.pushViewController(vc
+                                                          , animated: true)
+            
+            
         }
         catch{
             print("error save seller name")

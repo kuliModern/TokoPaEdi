@@ -30,7 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.frame = view.bounds
         view.addSubview(tableView)
         
-        title = "TokoPaEdi"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Hello, Handaru"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
         
