@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */; };
+		C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */; };
+		C0B571F826FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */; };
+		C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */; };
+		C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */; };
+		C0DB7E4E26FA3CC900C955D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */; };
+		C0DB7E5126FA3CC900C955D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */; };
+		C0DB7E5426FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E5226FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld */; };
+		C0DB7E5626FA3CCB00C955D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DB7E5526FA3CCB00C955D5 /* Assets.xcassets */; };
+		C0DB7E5926FA3CCB00C955D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DB7E5726FA3CCB00C955D5 /* LaunchScreen.storyboard */; };
+		C0DB7E6A26FCBEBC00C955D5 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E6926FCBEBC00C955D5 /* RegistViewController.swift */; };
+		C0DB7E6C26FCBF0E00C955D5 /* RegistStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DB7E6B26FCBF0E00C955D5 /* RegistStoryBoard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegistViewController.swift; sourceTree = "<group>"; };
+		C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C0DB7E4626FA3CC900C955D5 /* tokoPaEdi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tokoPaEdi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0DB7E5026FA3CC900C955D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0DB7E5326FA3CC900C955D5 /* tokoPaEdi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tokoPaEdi.xcdatamodel; sourceTree = "<group>"; };
+		C0DB7E5526FA3CCB00C955D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0DB7E5826FA3CCB00C955D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0DB7E5A26FA3CCB00C955D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DB7E6926FCBEBC00C955D5 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		C0DB7E6B26FCBF0E00C955D5 /* RegistStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistStoryBoard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0DB7E4326FA3CC900C955D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0DB7E3D26FA3CC900C955D5 = {
+			isa = PBXGroup;
+			children = (
+				C0DB7E4826FA3CC900C955D5 /* tokoPaEdi */,
+				C0DB7E4726FA3CC900C955D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0DB7E4726FA3CC900C955D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB7E4626FA3CC900C955D5 /* tokoPaEdi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0DB7E4826FA3CC900C955D5 /* tokoPaEdi */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB7E6426FA3F0400C955D5 /* SellerDatabase */,
+				C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */,
+				C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */,
+				C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */,
+				C0DB7E6D26FCBF1F00C955D5 /* Registration */,
+				C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */,
+				C0DB7E5526FA3CCB00C955D5 /* Assets.xcassets */,
+				C0DB7E5726FA3CCB00C955D5 /* LaunchScreen.storyboard */,
+				C0DB7E5A26FA3CCB00C955D5 /* Info.plist */,
+				C0DB7E5226FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld */,
+			);
+			path = tokoPaEdi;
+			sourceTree = "<group>";
+		};
+		C0DB7E6426FA3F0400C955D5 /* SellerDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */,
+				C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */,
+			);
+			path = SellerDatabase;
+			sourceTree = "<group>";
+		};
+		C0DB7E6D26FCBF1F00C955D5 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB7E6926FCBEBC00C955D5 /* RegistViewController.swift */,
+				C0DB7E6B26FCBF0E00C955D5 /* RegistStoryBoard.storyboard */,
+				C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0DB7E4526FA3CC900C955D5 /* tokoPaEdi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DB7E5D26FA3CCB00C955D5 /* Build configuration list for PBXNativeTarget "tokoPaEdi" */;
+			buildPhases = (
+				C0DB7E4226FA3CC900C955D5 /* Sources */,
+				C0DB7E4326FA3CC900C955D5 /* Frameworks */,
+				C0DB7E4426FA3CC900C955D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tokoPaEdi;
+			productName = tokoPaEdi;
+			productReference = C0DB7E4626FA3CC900C955D5 /* tokoPaEdi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0DB7E3E26FA3CC900C955D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C0DB7E4526FA3CC900C955D5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = C0DB7E4126FA3CC900C955D5 /* Build configuration list for PBXProject "tokoPaEdi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0DB7E3D26FA3CC900C955D5;
+			productRefGroup = C0DB7E4726FA3CC900C955D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0DB7E4526FA3CC900C955D5 /* tokoPaEdi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0DB7E4426FA3CC900C955D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DB7E5926FA3CCB00C955D5 /* LaunchScreen.storyboard in Resources */,
+				C0DB7E6C26FCBF0E00C955D5 /* RegistStoryBoard.storyboard in Resources */,
+				C0DB7E5626FA3CCB00C955D5 /* Assets.xcassets in Resources */,
+				C0DB7E5126FA3CC900C955D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0DB7E4226FA3CC900C955D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DB7E4E26FA3CC900C955D5 /* ViewController.swift in Sources */,
+				C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */,
+				C0B571F826FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift in Sources */,
+				C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */,
+				C0DB7E5426FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld in Sources */,
+				C0DB7E6A26FCBEBC00C955D5 /* RegistViewController.swift in Sources */,
+				C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */,
+				C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DB7E5026FA3CC900C955D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0DB7E5726FA3CCB00C955D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DB7E5826FA3CCB00C955D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0DB7E5B26FA3CCB00C955D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0DB7E5C26FA3CCB00C955D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0DB7E5E26FA3CCB00C955D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QJD99HSU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tokoPaEdi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RPL.azkake.tokoPaEdi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0DB7E5F26FA3CCB00C955D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QJD99HSU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tokoPaEdi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RPL.azkake.tokoPaEdi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0DB7E4126FA3CC900C955D5 /* Build configuration list for PBXProject "tokoPaEdi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DB7E5B26FA3CCB00C955D5 /* Debug */,
+				C0DB7E5C26FA3CCB00C955D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DB7E5D26FA3CCB00C955D5 /* Build configuration list for PBXNativeTarget "tokoPaEdi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DB7E5E26FA3CCB00C955D5 /* Debug */,
+				C0DB7E5F26FA3CCB00C955D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0DB7E5226FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0DB7E5326FA3CC900C955D5 /* tokoPaEdi.xcdatamodel */,
+			);
+			currentVersion = C0DB7E5326FA3CC900C955D5 /* tokoPaEdi.xcdatamodel */;
+			path = tokoPaEdi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C0DB7E3E26FA3CC900C955D5 /* Project object */;
+}
