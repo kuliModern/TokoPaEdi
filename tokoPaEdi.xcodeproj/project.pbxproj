@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02334912702019B00DA5044 /* ProfileViewController.swift */; };
 		C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */; };
 		C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */; };
 		C0B571F826FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02334912702019B00DA5044 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegistViewController.swift; sourceTree = "<group>"; };
 		C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */,
+				C02334912702019B00DA5044 /* ProfileViewController.swift */,
 				C0DB7E4F26FA3CC900C955D5 /* Main.storyboard */,
 			);
 			path = SellerProduct;
@@ -103,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				C0DB7E6926FCBEBC00C955D5 /* RegistViewController.swift */,
-				C0DB7E6B26FCBF0E00C955D5 /* RegistStoryBoard.storyboard */,
 				C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */,
+				C0DB7E6B26FCBF0E00C955D5 /* RegistStoryBoard.storyboard */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */,
 				C0DB7E5426FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld in Sources */,
 				C0DB7E6A26FCBEBC00C955D5 /* RegistViewController.swift in Sources */,
+				C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */,
 				C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */,
 				C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */,
 			);

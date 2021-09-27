@@ -31,12 +31,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         view.addSubview(tableView)
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Hello, Handaru"
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        title = "Product Catalogue"
+        navigationController()
+        
+       
         
         getAllItem()
         // Do any additional setup after loading the view.
+    }
+    
+    // navigation controller
+    
+    func navigationController(){
+        let image = UIImage(systemName: "person.circle")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
+        navigationItem.leftBarButtonItem?.isEnabled = true
     }
     
     
@@ -57,6 +69,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         present(alert, animated: true, completion: nil)
         
     }
+    
+    @objc func profileButton(){
+        
+        self.performSegue(withIdentifier: "profileVC", sender: self)
+        
+    }
+    
+  
     
     //Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

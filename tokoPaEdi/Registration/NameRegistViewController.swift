@@ -62,9 +62,6 @@ class NameRegistViewController: UIViewController {
         
         
     }
-    
-    func testingGitHUb(){
-        print("sehllo")
-    }
+   
 
 }
