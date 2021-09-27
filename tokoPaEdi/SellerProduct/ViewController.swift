@@ -71,8 +71,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func profileButton(){
-        
-        self.performSegue(withIdentifier: "profileVC", sender: self)
+        //self.navigationController?.popToRootViewController(animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
+             
+            self.navigationController?.pushViewController(vc, animated: true)
         
     }
     

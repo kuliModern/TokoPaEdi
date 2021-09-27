@@ -41,6 +41,8 @@ class RegistViewController: UIViewController {
             self.navigationController?.pushViewController(vc, animated: true)
     }
     
+   
+    
     // Delete Value Core Data-nya 
     func deleteData() {
         let appDel:AppDelegate = (UIApplication.shared.delegate as! AppDelegate)

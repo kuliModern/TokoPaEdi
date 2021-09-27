@@ -52,7 +52,7 @@ class NameRegistViewController: UIViewController {
             
             self.navigationController?.pushViewController(vc
                                                           , animated: true)
-            
+          
             
         }
         catch{

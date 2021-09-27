@@ -21,11 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             
             let storyboard = UIStoryboard(name: "RegistStoryBoard", bundle: nil)
-            let initialVC = storyboard.instantiateViewController(withIdentifier: "registVC")
-            let nav = UINavigationController(rootViewController: initialVC)
+            let initialVC = storyboard.instantiateInitialViewController()
+            //let nav = UINavigationController(rootViewController: initialVC)
             
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = nav // Your RootViewController in here
+            window.rootViewController = initialVC // Your RootViewController in here
             self.window = window
             window.makeKeyAndVisible()
         }

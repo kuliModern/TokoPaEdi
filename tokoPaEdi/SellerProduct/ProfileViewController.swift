@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         updateUI()
+        buttonLogOut()
         // Do any additional setup after loading the view.
     }
     
@@ -37,6 +38,23 @@ class ProfileViewController: UIViewController {
         catch {
              print("error")
         }
+    }
+    
+    func buttonLogOut(){
+        
+        let button = UIButton(frame: CGRect(x: 35, y: 550, width: 350, height: 50))
+        button.backgroundColor = .red
+        button.setTitle("Log Out", for: .normal)
+        button.addTarget(self, action: #selector(buttonDidTap), for: .touchUpInside)
+        
+        view.addSubview(button)
+    }
+    
+    @objc func buttonDidTap(){
+        print("logout pressed")
+        
+        navigationController?.popToRootViewController(animated: true)
+        
     }
 
     /*
