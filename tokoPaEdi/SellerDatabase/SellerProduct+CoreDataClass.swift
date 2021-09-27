@@ -2,7 +2,7 @@
 //  SellerProduct+CoreDataClass.swift
 //  tokoPaEdi
 //
-//  Created by Azka Kusuma on 23/09/21.
+//  Created by Azka Kusuma on 27/09/21.
 //
 //
 

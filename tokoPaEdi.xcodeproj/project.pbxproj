@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02334912702019B00DA5044 /* ProfileViewController.swift */; };
+		C023349527022BA700DA5044 /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023349327022BA700DA5044 /* SellerProduct+CoreDataClass.swift */; };
+		C023349627022BA700DA5044 /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023349427022BA700DA5044 /* SellerProduct+CoreDataProperties.swift */; };
 		C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */; };
-		C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */; };
-		C0B571F826FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */; };
 		C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */; };
 		C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */; };
 		C0DB7E4E26FA3CC900C955D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4D26FA3CC900C955D5 /* ViewController.swift */; };
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		C02334912702019B00DA5044 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C023349327022BA700DA5044 /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C023349427022BA700DA5044 /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegistViewController.swift; sourceTree = "<group>"; };
-		C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C0DB7E4626FA3CC900C955D5 /* tokoPaEdi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tokoPaEdi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		C0DB7E6426FA3F0400C955D5 /* SellerDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				C0B571F526FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift */,
-				C0B571F626FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift */,
+				C023349327022BA700DA5044 /* SellerProduct+CoreDataClass.swift */,
+				C023349427022BA700DA5044 /* SellerProduct+CoreDataProperties.swift */,
 			);
 			path = SellerDatabase;
 			sourceTree = "<group>";
@@ -184,14 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C023349527022BA700DA5044 /* SellerProduct+CoreDataClass.swift in Sources */,
 				C0DB7E4E26FA3CC900C955D5 /* ViewController.swift in Sources */,
 				C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */,
-				C0B571F826FCCCB80056F1A2 /* SellerProduct+CoreDataProperties.swift in Sources */,
-				C0B571F726FCCCB80056F1A2 /* SellerProduct+CoreDataClass.swift in Sources */,
 				C0DB7E5426FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld in Sources */,
 				C0DB7E6A26FCBEBC00C955D5 /* RegistViewController.swift in Sources */,
 				C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */,
 				C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */,
+				C023349627022BA700DA5044 /* SellerProduct+CoreDataProperties.swift in Sources */,
 				C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

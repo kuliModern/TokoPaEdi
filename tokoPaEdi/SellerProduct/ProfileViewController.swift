@@ -18,29 +18,13 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateUI()
         buttonLogOut()
         // Do any additional setup after loading the view.
     }
     
-    func updateUI(){
-        
-        do {
-            let result = try context.fetch(SellerProduct.fetchRequest())
-            
-            for data in result as [NSManagedObject]{
-                sellerName = data.value(forKey: "sellerName") as! String
-                
-            }
-            
-            userName.text = sellerName
-        }
-        catch {
-             print("error")
-        }
-    }
-    
     func buttonLogOut(){
+        
+        userName.text = sellerName
         
         let button = UIButton(frame: CGRect(x: 35, y: 550, width: 350, height: 50))
         button.backgroundColor = .red

@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   
+    
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -18,26 +19,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
-
+        
     }()
     
     private var models = [SellerProduct]()
-
+    
+    var seller = true
+    var customerName = ""
+    var sellerName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
         view.addSubview(tableView)
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        title = "Product Catalogue"
+
         navigationController()
-        
-       
-        
         getAllItem()
+        getName()
+        updateUI()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -46,9 +48,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func navigationController(){
         let image = UIImage(systemName: "person.circle")
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
-        navigationItem.leftBarButtonItem?.isEnabled = true
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        if seller == true{
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
+            navigationItem.leftBarButtonItem?.isEnabled = true
+        }
+        else{
+            navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
+            navigationItem.leftBarButtonItem?.isEnabled = true
+        }
+        
+        
+    }
+    
+    func updateUI(){
+        if seller == true{
+            title = "Your Product Catalogue"
+        }
+        else{
+            title = "Welcome, \(customerName)"
+        }
+        
     }
     
     
@@ -73,13 +95,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @objc func profileButton(){
         //self.navigationController?.popToRootViewController(animated: true)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
-             
-            self.navigationController?.pushViewController(vc, animated: true)
+        let vc = storyboard.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
+        if seller == true{
+            vc.sellerName = sellerName
+        }
+        else{
+            vc.sellerName = customerName
+        }
+        
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
-  
+    
     
     //Table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -95,18 +123,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
         let item = models[indexPath.row]
         
-        let sheet = UIAlertController(title: item.product, message: nil, preferredStyle: .actionSheet)
-        sheet.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
-            
-            self.deleteItem(item: item)
-            
-        }))
-        present(sheet, animated: true, completion: nil)
+        if seller == true{
+            let sheet = UIAlertController(title: item.product, message: nil, preferredStyle: .actionSheet)
+            sheet.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
+                
+                self.deleteItem(item: item)
+                
+            }))
+            present(sheet, animated: true, completion: nil)
+        }
     }
     
-
+    
     // Core Data
     
     func getAllItem(){
@@ -119,9 +151,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
         catch {
-             print("error")
+            print("error")
         }
-     
+        
+    }
+    
+    func getName(){
+        
+        if seller == true{
+            for data in models {
+                sellerName =  data.sellerName ?? ""
+            }
+        }
+        else{
+            for data in models{
+                customerName =  data.customerName ?? ""
+            }
+            
+        }
     }
     
     func createItem(name: String){

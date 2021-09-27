@@ -36,32 +36,60 @@ class NameRegistViewController: UIViewController {
             button.setTitle("Start Ordering", for: .normal)
         }
     }
-
+    
     func saveButton(){
         
-        let sellerNameCoreData = SellerProduct(context: context)
-        guard let sellerName = sellerName.text else { return }
-        
-        sellerNameCoreData.sellerName = sellerName
-        
-        do {
-            try context.save()
+        if seller == true{
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let sellerNameCoreData = SellerProduct(context: context)
+            guard let sellerName = sellerName.text else { return }
+            
+            sellerNameCoreData.sellerName = sellerName
+            
+            do {
+                try context.save()
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "sellerProductVC") as! ViewController
-            
-            self.navigationController?.pushViewController(vc
-                                                          , animated: true)
-          
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.seller = true
+         
+            }
+            catch{
+                print("error save seller name")
+            }
             
         }
-        catch{
-            print("error save seller name")
+        
+        else{
+            
+            let saveCustomerName = SellerProduct(context: context)
+            guard let customerName = sellerName.text else { return }
+            
+            saveCustomerName.customerName = customerName
+            
+            do {
+                try context.save()
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "sellerProductVC") as! ViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+                vc.seller = false
+         
+            }
+            catch{
+                print("error save seller name")
+            }
+            
+            
+            
         }
+        
+        
         
         
         
     }
-   
-
+    
+    
 }
