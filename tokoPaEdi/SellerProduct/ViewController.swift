@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    
     // Table View
     let tableView: UITableView = {
         let table = UITableView()
@@ -34,7 +33,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.frame = view.bounds
         view.addSubview(tableView)
-
         navigationController()
         getAllItem()
         getName()
@@ -62,7 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
     }
-    
+     
     func updateUI(){
         if seller == true{
             title = "Your Product Catalogue"
@@ -88,6 +86,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self?.createItem(name: text)
             
         }))
+        
         present(alert, animated: true, completion: nil)
         
     }
@@ -118,13 +117,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+     
+    
         cell.textLabel?.text = model.product
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "productDetail") as! ProductDetailsViewController
         let item = models[indexPath.row]
         
         if seller == true{
@@ -134,7 +136,92 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 self.deleteItem(item: item)
                 
             }))
+            sheet.addAction(UIAlertAction(title: "See Details", style: .default, handler: { _ in
+                
+               
+                switch indexPath.row{
+                case 0 : //Besi
+                    vc.productNames = "Besi"
+                    vc.productDetails = "Besi usually is used as a vital structure of a building. Without it, a building can easily collapse. Available in various diameters: 12 mm, 13 mm, and 22 mm."
+                    vc.productPrices = "Rp45,000"
+                    vc.productStocks = "1000"
+                    vc.productPhotos = UIImage(named: "besi")
+                    
+                    
+                    self.present(vc, animated: true, completion: nil)
+                    
+                case 1 : // Baja
+                    vc.productNames = "Baja"
+                    vc.productDetails = "Baja mostly is used to built bridges, factories, and other huge buildings. The only available size is 100 x 100 x 6 x 8 mm x 6 m with the weight of 103 kg."
+                    vc.productPrices = "Rp1,500,000"
+                    vc.productStocks = "1500"
+                    vc.productPhotos = UIImage(named: "baja")
+                    
+                    
+                    self.present(vc, animated: true, completion: nil)
+                    
+                case 2 : //Bata
+                    
+                    vc.productNames = "Bata"
+                    vc.productDetails = "Bata is a material that can be used for various building purposes, whether it is to make a foundation or a wall. Size: 110 mm x 220 mm x 55 mm. You can choose two types of bricks, processed conventionally or by oven."
+                    vc.productPrices = "Rp850"
+                    vc.productStocks = "10000"
+                    vc.productPhotos = UIImage(named: "bata")
+                    
+                    
+                    
+                    
+                    self.present(vc, animated: true, completion: nil)
+                    
+                default:
+                    vc.productNames = "gamasuk"
+                    
+                }
+                
+            }))
             present(sheet, animated: true, completion: nil)
+        }
+        
+        else{
+            
+            switch indexPath.row{
+            case 0 : //Besi
+                vc.productNames = "Besi"
+                vc.productDetails = "Besi usually is used as a vital structure of a building. Without it, a building can easily collapse. Available in various diameters: 12 mm, 13 mm, and 22 mm."
+                vc.productPrices = "Rp45,000"
+                vc.productStocks = "1000"
+                vc.productPhotos = UIImage(named: "besi")
+                
+                
+                self.present(vc, animated: true, completion: nil)
+                
+            case 1 : // Baja
+                vc.productNames = "Baja"
+                vc.productDetails = "Baja mostly is used to built bridges, factories, and other huge buildings. The only available size is 100 x 100 x 6 x 8 mm x 6 m with the weight of 103 kg."
+                vc.productPrices = "Rp1,500,000"
+                vc.productStocks = "1500"
+                vc.productPhotos = UIImage(named: "baja")
+                
+                
+                self.present(vc, animated: true, completion: nil)
+                
+            case 2 : //Bata
+                
+                vc.productNames = "Bata"
+                vc.productDetails = "Bata is a material that can be used for various building purposes, whether it is to make a foundation or a wall. Size: 110 mm x 220 mm x 55 mm. You can choose two types of bricks, processed conventionally or by oven."
+                vc.productPrices = "Rp850"
+                vc.productStocks = "10000"
+                vc.productPhotos = UIImage(named: "bata")
+                
+                
+                
+                
+                self.present(vc, animated: true, completion: nil)
+                
+            default:
+                vc.productNames = "gamasuk"
+                
+            }
         }
     }
     
@@ -201,5 +288,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
     }
+    
+    
+    
 }
 

@@ -4,9 +4,11 @@
         <attribute name="customerName" optional="YES" attributeType="String"/>
         <attribute name="product" optional="YES" attributeType="String"/>
         <attribute name="productDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <attribute name="productPrice" optional="YES" attributeType="String"/>
         <attribute name="sellerName" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="SellerProduct" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="SellerProduct" positionX="-63" positionY="-18" width="128" height="119"/>
     </elements>
 </model>

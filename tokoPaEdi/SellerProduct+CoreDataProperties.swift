@@ -2,7 +2,7 @@
 //  SellerProduct+CoreDataProperties.swift
 //  tokoPaEdi
 //
-//  Created by Azka Kusuma on 27/09/21.
+//  Created by Azka Kusuma on 18/10/21.
 //
 //
 
@@ -16,10 +16,12 @@ extension SellerProduct {
         return NSFetchRequest<SellerProduct>(entityName: "SellerProduct")
     }
 
+    @NSManaged public var customerName: String?
     @NSManaged public var product: String?
     @NSManaged public var productDate: Date?
     @NSManaged public var sellerName: String?
-    @NSManaged public var customerName: String?
+    @NSManaged public var productPrice: String?
+    @NSManaged public var productDescription: String?
 
 }
 
