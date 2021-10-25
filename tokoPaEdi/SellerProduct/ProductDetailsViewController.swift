@@ -19,7 +19,7 @@ class ProductDetailsViewController: UIViewController {
     var productNames = ""
     var productDetails = ""
     var productPrices = ""
-    var productStocks = ""
+    var productStocks: Int  = 0
     var productPhotos: UIImage?
     
     
@@ -35,10 +35,17 @@ class ProductDetailsViewController: UIViewController {
         productName.text = productNames
         productDetail.text = productDetails
         productPrice.text = productPrices
-        productStock.text = productStocks
+        productStock.text = "\(productStocks)"
         productPhoto.image = productPhotos
     }
     
-
+    @IBAction func addToCartButton(_ sender: UIButton) {
+        
+        productStocks -= 1
+        productStocks - 1
+        productStock.text = "\(productStocks)"
+        
+    }
+    
     
 }

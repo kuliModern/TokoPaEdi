@@ -144,7 +144,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     vc.productNames = "Besi"
                     vc.productDetails = "Besi usually is used as a vital structure of a building. Without it, a building can easily collapse. Available in various diameters: 12 mm, 13 mm, and 22 mm."
                     vc.productPrices = "Rp45,000"
-                    vc.productStocks = "1000"
+                    vc.productStocks = 1000
                     vc.productPhotos = UIImage(named: "besi")
                     
                     
@@ -154,7 +154,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     vc.productNames = "Baja"
                     vc.productDetails = "Baja mostly is used to built bridges, factories, and other huge buildings. The only available size is 100 x 100 x 6 x 8 mm x 6 m with the weight of 103 kg."
                     vc.productPrices = "Rp1,500,000"
-                    vc.productStocks = "1500"
+                    vc.productStocks = 1500
                     vc.productPhotos = UIImage(named: "baja")
                     
                     
@@ -165,7 +165,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     vc.productNames = "Bata"
                     vc.productDetails = "Bata is a material that can be used for various building purposes, whether it is to make a foundation or a wall. Size: 110 mm x 220 mm x 55 mm. You can choose two types of bricks, processed conventionally or by oven."
                     vc.productPrices = "Rp850"
-                    vc.productStocks = "10000"
+                    vc.productStocks = 10000
                     vc.productPhotos = UIImage(named: "bata")
                     
                     
@@ -189,7 +189,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 vc.productNames = "Besi"
                 vc.productDetails = "Besi usually is used as a vital structure of a building. Without it, a building can easily collapse. Available in various diameters: 12 mm, 13 mm, and 22 mm."
                 vc.productPrices = "Rp45,000"
-                vc.productStocks = "1000"
+                vc.productStocks = 1000
                 vc.productPhotos = UIImage(named: "besi")
                 
                 
@@ -199,7 +199,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 vc.productNames = "Baja"
                 vc.productDetails = "Baja mostly is used to built bridges, factories, and other huge buildings. The only available size is 100 x 100 x 6 x 8 mm x 6 m with the weight of 103 kg."
                 vc.productPrices = "Rp1,500,000"
-                vc.productStocks = "1500"
+                vc.productStocks = 1500
                 vc.productPhotos = UIImage(named: "baja")
                 
                 
@@ -210,7 +210,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 vc.productNames = "Bata"
                 vc.productDetails = "Bata is a material that can be used for various building purposes, whether it is to make a foundation or a wall. Size: 110 mm x 220 mm x 55 mm. You can choose two types of bricks, processed conventionally or by oven."
                 vc.productPrices = "Rp850"
-                vc.productStocks = "10000"
+                vc.productStocks = 10000
                 vc.productPhotos = UIImage(named: "bata")
                 
                 
