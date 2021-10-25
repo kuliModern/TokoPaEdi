@@ -97,6 +97,21 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="842.41071428571422"/>
         </scene>
+        <!--User Cart View Controller-->
+        <scene sceneID="W2i-Sd-CcL">
+            <objects>
+                <viewController storyboardIdentifier="userCart" id="mWg-JN-nmV" customClass="UserCartViewController" customModule="tokoPaEdi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ze-LA-3Zd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yNV-dU-OTM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aef-dO-31U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="842"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jDu-cN-Sqk">
             <objects>

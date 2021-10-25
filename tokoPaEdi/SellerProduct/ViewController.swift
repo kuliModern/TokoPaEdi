@@ -45,15 +45,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func navigationController(){
         let image = UIImage(systemName: "person.circle")
+        let cart = UIImage(systemName: "cart")
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
         if seller == true{
+            
             navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
-            navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
+            
+            navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton)
+            )
             navigationItem.leftBarButtonItem?.isEnabled = true
         }
         else{
+            
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: cart, style: .plain, target: self, action: #selector(cartButtonPressed))
+            
             navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(profileButton))
             navigationItem.leftBarButtonItem?.isEnabled = true
         }
@@ -68,6 +75,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         else{
             title = "Welcome, \(customerName)"
         }
+        
+    }
+    
+    @objc func cartButtonPressed(){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "userCart") as! UserCartViewController
+     
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
