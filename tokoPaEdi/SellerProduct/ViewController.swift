@@ -38,6 +38,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         getName()
         updateUI()
         
+        // deleteAllData(entity: "SellerProduct")
+
         // Do any additional setup after loading the view.
     }
     
@@ -67,6 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
     }
+  
      
     func updateUI(){
         if seller == true{
@@ -236,6 +239,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             default:
                 vc.productNames = "gamasuk"
+                self.present(vc, animated: true, completion: nil)
                 
             }
         }
@@ -288,6 +292,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             print("error save database")
         }
         
+    }
+    
+    func deleteAllData(entity: String){
+
+    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+    let managedContext = appDelegate.persistentContainer.viewContext
+    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    fetchRequest.returnsObjectsAsFaults = false
+
+    do {
+        let arrUsrObj = try managedContext.fetch(fetchRequest)
+        for usrObj in arrUsrObj as! [NSManagedObject] {
+            managedContext.delete(usrObj)
+        }
+       try managedContext.save() //don't forget
+        } catch let error as NSError {
+        print("delete fail--",error)
+      }
+
     }
     
     func deleteItem(item: SellerProduct){

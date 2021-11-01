@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02334912702019B00DA5044 /* ProfileViewController.swift */; };
-		C02342A1271DCA9300673477 /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023429F271DCA9300673477 /* SellerProduct+CoreDataClass.swift */; };
-		C02342A2271DCA9300673477 /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02342A0271DCA9300673477 /* SellerProduct+CoreDataProperties.swift */; };
 		C02342A4271DCD4700673477 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02342A3271DCD4700673477 /* ProductDetailsViewController.swift */; };
 		C08B779427267E3000DE17EA /* UserCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B779327267E3000DE17EA /* UserCartViewController.swift */; };
+		C08B779B2726827D00DE17EA /* SellerProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B77992726827D00DE17EA /* SellerProduct+CoreDataClass.swift */; };
+		C08B779C2726827D00DE17EA /* SellerProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B779A2726827D00DE17EA /* SellerProduct+CoreDataProperties.swift */; };
 		C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */; };
 		C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */; };
 		C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */; };
@@ -26,10 +26,10 @@
 
 /* Begin PBXFileReference section */
 		C02334912702019B00DA5044 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C023429F271DCA9300673477 /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C02342A0271DCA9300673477 /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C02342A3271DCD4700673477 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		C08B779327267E3000DE17EA /* UserCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCartViewController.swift; sourceTree = "<group>"; };
+		C08B77992726827D00DE17EA /* SellerProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C08B779A2726827D00DE17EA /* SellerProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C0B571F326FCC5170056F1A2 /* NameRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegistViewController.swift; sourceTree = "<group>"; };
 		C0DB7E4626FA3CC900C955D5 /* tokoPaEdi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tokoPaEdi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,12 +93,10 @@
 		C0DB7E4826FA3CC900C955D5 /* tokoPaEdi */ = {
 			isa = PBXGroup;
 			children = (
-				C08B779227267E1100DE17EA /* User Cart */,
-				C023429F271DCA9300673477 /* SellerProduct+CoreDataClass.swift */,
-				C02342A0271DCA9300673477 /* SellerProduct+CoreDataProperties.swift */,
-				C0DB7E6426FA3F0400C955D5 /* SellerDatabase */,
 				C0DB7E4926FA3CC900C955D5 /* AppDelegate.swift */,
 				C0DB7E4B26FA3CC900C955D5 /* SceneDelegate.swift */,
+				C0DB7E6426FA3F0400C955D5 /* SellerDatabase */,
+				C08B779227267E1100DE17EA /* User Cart */,
 				C0B571F926FCD8090056F1A2 /* SellerProduct */,
 				C0DB7E6D26FCBF1F00C955D5 /* Registration */,
 				C0DB7E5526FA3CCB00C955D5 /* Assets.xcassets */,
@@ -112,6 +110,8 @@
 		C0DB7E6426FA3F0400C955D5 /* SellerDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				C08B77992726827D00DE17EA /* SellerProduct+CoreDataClass.swift */,
+				C08B779A2726827D00DE17EA /* SellerProduct+CoreDataProperties.swift */,
 			);
 			path = SellerDatabase;
 			sourceTree = "<group>";
@@ -198,15 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02342A1271DCA9300673477 /* SellerProduct+CoreDataClass.swift in Sources */,
 				C0DB7E4E26FA3CC900C955D5 /* ViewController.swift in Sources */,
 				C0DB7E4A26FA3CC900C955D5 /* AppDelegate.swift in Sources */,
+				C08B779B2726827D00DE17EA /* SellerProduct+CoreDataClass.swift in Sources */,
 				C02342A4271DCD4700673477 /* ProductDetailsViewController.swift in Sources */,
 				C0DB7E5426FA3CC900C955D5 /* tokoPaEdi.xcdatamodeld in Sources */,
 				C0DB7E6A26FCBEBC00C955D5 /* RegistViewController.swift in Sources */,
 				C02334922702019B00DA5044 /* ProfileViewController.swift in Sources */,
 				C0DB7E4C26FA3CC900C955D5 /* SceneDelegate.swift in Sources */,
-				C02342A2271DCA9300673477 /* SellerProduct+CoreDataProperties.swift in Sources */,
+				C08B779C2726827D00DE17EA /* SellerProduct+CoreDataProperties.swift in Sources */,
 				C08B779427267E3000DE17EA /* UserCartViewController.swift in Sources */,
 				C0B571F426FCC5170056F1A2 /* NameRegistViewController.swift in Sources */,
 			);

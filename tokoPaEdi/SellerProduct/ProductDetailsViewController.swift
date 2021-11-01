@@ -8,12 +8,14 @@
 import UIKit
 
 class ProductDetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productPhoto: UIImageView!
     @IBOutlet weak var productDetail: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productStock: UILabel!
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     var productNames = ""
@@ -25,7 +27,7 @@ class ProductDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.\
         updateUI()
     }
@@ -44,6 +46,29 @@ class ProductDetailsViewController: UIViewController {
         productStocks -= 1
         productStocks - 1
         productStock.text = "\(productStocks)"
+        
+        switch productNames{
+            
+        case "Besi":
+            createItem(name: "Besi")
+            
+        default:
+            print("failed to save")
+        }
+    }
+    
+    func createItem(name: String){
+        
+        let newItem = SellerProduct(context: context)
+        newItem.productToCart = name
+        
+        do{
+            try context.save()
+            
+        }
+        catch{
+            print("error save database")
+        }
         
     }
     
